@@ -23,6 +23,7 @@ def practice2():
                 print ("Equal")
             else:
                 return None
+
         except ValueError:
             print ("Please enter a numeric number!")
             continue
@@ -38,6 +39,7 @@ def practice3():
             sum = num1 + num2
 
             print("Sum:", sum)    
+
         except ValueError:
             print ("Please enter a numeric number!")
             continue
@@ -51,8 +53,21 @@ def practice4():
 
             product = num1*num2
             print (f"The product is: {product}")
+
         except ValueError:
             print ("Please enter a numeric number!")
             continue
 
-practice1()
+def practice5():
+    while True:
+        try:
+            num1 = float (input("Enter first number: "))
+            num2 = float (input ("Enter second number: "))
+
+            quotient = num1/num2
+            print (f"The quotient is: {quotient:.2f}")
+        except ValueError:
+            print ("Please enter a numeric number!")
+            continue
+def practice6():
+    
